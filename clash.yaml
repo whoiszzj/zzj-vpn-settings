@@ -166,6 +166,24 @@ proxy-groups:
       - 🇳🇱 Netherlands
       - 🇮🇳 India
       - 🇹🇷 Türkiye
+  - name: TikTok
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/TikTok.png"
+    proxies:
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
   - name: Twitter
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Twitter.png"
@@ -460,6 +478,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml"
     interval: 86400
     path: ./ruleset/Twitter.yaml
+  TikTok:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml"
+    interval: 86400
+    path: ./ruleset/TikTok.yaml
   Lan:
     type: http
     behavior: classical
@@ -509,6 +533,7 @@ rules:
   - RULE-SET,BiliBili,BiliBili
   - RULE-SET,Netflix,Netflix
   - RULE-SET,Twitter, Twitter
+  - RULE-SET,TikTok, TikTok
   - RULE-SET,Spotify,Spotify
   - RULE-SET,OpenAI,OpenAI
   - RULE-SET,Game,Game
