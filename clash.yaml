@@ -1,0 +1,520 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+profile:
+  store-selected: true
+  store-fake-ip: true
+unified-delay: true
+tcp-concurrent: true
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  default-nameserver:
+    - 119.29.29.29
+  nameserver:
+    - https://doh.pub/dns-query
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - "dns.msftncsi.com"
+    - "*.srv.nintendo.net"
+    - "*.stun.playstation.net"
+    - "xbox.*.microsoft.com"
+    - "*.xboxlive.com"
+  fallback:
+    - 1.1.1.1
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+proxy-groups:
+  - name: "Select"
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Static.png"
+    proxies:
+      - Auto
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: "Available"
+    type: select
+    include-all-proxies: true
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Available.png"
+  - name: Auto
+    type: url-test
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Auto.png"
+    proxies:
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇨🇳 Taiwan
+  - name: No-Match
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Final.png"
+    proxies:
+      - DIRECT
+      - Select
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 300
+  - name: GitHub
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/GitHub.png"
+    proxies:
+      - DIRECT
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: OpenAI
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/ChatGPT.png"
+    proxies:
+      - Select
+      - Available
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Google
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Google_Search.png"
+    proxies:
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: GlobalMedia
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/ForeignMedia.png"
+    proxies:
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Netflix
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Netflix.png"
+    proxies:
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Twitter
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Twitter.png"
+    proxies:
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Game
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Steam.png"
+    proxies:
+      - DIRECT
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Microsoft
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Microsoft.png"
+    proxies:
+      - DIRECT
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Apple
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Apple_2.png"
+    proxies:
+      - DIRECT
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: BiliBili
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/bilibili.png"
+    proxies:
+      - DIRECT
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Spotify
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Spotify.png"
+    proxies:
+      - DIRECT
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: 🇭🇰 Hong Kong
+    type: url-test
+    include-all-proxies: true
+    filter: "Hong Kong"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇸🇬 Singapore
+    type: url-test
+    include-all-proxies: true
+    filter: "Singapore"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇯🇵 Japan
+    type: url-test
+    include-all-proxies: true
+    filter: "Japan"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇺🇸 United States
+    type: url-test
+    include-all-proxies: true
+    filter: "United States"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇨🇳 Taiwan
+    type: url-test
+    include-all-proxies: true
+    filter: "Taiwan"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇩🇪 Germany
+    type: url-test
+    include-all-proxies: true
+    filter: "Germany"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇬🇧 United Kingdom
+    type: url-test
+    include-all-proxies: true
+    filter: "United Kingdom"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇰🇷 South Korea
+    type: url-test
+    include-all-proxies: true
+    filter: "South Korea"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇫🇷 France
+    type: url-test
+    include-all-proxies: true
+    filter: "France"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇳🇱 Netherlands
+    type: url-test
+    include-all-proxies: true
+    filter: "Netherlands"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇮🇳 India
+    type: url-test
+    include-all-proxies: true
+    filter: "India"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+  - name: 🇹🇷 Türkiye
+    type: url-test
+    include-all-proxies: true
+    filter: "Türkiye"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    hidden: true
+rule-providers:
+  ZZJ-direct:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/whoiszzj/zzj-rules/refs/heads/master/clash-direct.yaml"
+    interval: 86400
+    path: ./ruleset/ZZJ-DIRECT.yaml
+  ZZJ-proxy:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/whoiszzj/zzj-rules/refs/heads/master/clash-proxy.yaml"
+    interval: 86400
+    path: ./ruleset/ZZJ-PROXY.yaml
+  AdsLite:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml"
+    interval: 86400
+    path: ./ruleset/Advertising_Lite_Classical.yaml
+  Apple:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml"
+    interval: 86400
+    path: ./ruleset/Apple.yaml
+  BiliBili:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml"
+    interval: 86400
+    path: ./ruleset/BiliBili.yaml
+  Netflix:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical.yaml"
+    interval: 86400
+    path: ./ruleset/Netflix_Classical.yaml
+  Spotify:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml"
+    interval: 86400
+    path: ./ruleset/Spotify.yaml
+  GlobalMedia:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml"
+    interval: 86400
+    path: ./ruleset/GlobalMedia_Classical.yaml
+  OpenAI:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml"
+    interval: 86400
+    path: ./ruleset/OpenAI.yaml
+  Google:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml"
+    interval: 86400
+    path: ./ruleset/Google.yaml
+  Microsoft:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml"
+    interval: 86400
+    path: ./ruleset/Microsoft.yaml
+  Game:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml"
+    interval: 86400
+    path: ./ruleset/Game.yaml
+  GitHub:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml"
+    interval: 86400
+    path: ./ruleset/Github.yaml
+  Twitter:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml"
+    interval: 86400
+    path: ./ruleset/Twitter.yaml
+  Lan:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml"
+    interval: 86400
+    path: ./ruleset/Lan.yaml
+  Hijacking:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Hijacking/Hijacking.yaml"
+    interval: 86400
+    path: ./ruleset/Hijacking.yaml
+  Privacy:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Privacy/Privacy_Classical.yaml"
+    interval: 86400
+    path: ./ruleset/Privacy_Classical.yaml
+  ChinaIPs:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_Classical.yaml"
+    interval: 86400
+    path: ./ruleset/ChinaIPs_Classical.yaml
+  China:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Classical.yaml"
+    interval: 86400
+    path: ./ruleset/China_Classical.yaml
+  Global:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Classical.yaml"
+    interval: 86400
+    path: ./ruleset/Global_Classical.yaml
+rules:
+  - RULE-SET,Lan,DIRECT
+  - RULE-SET,ZZJ-direct,DIRECT
+  - RULE-SET,ZZJ-proxy,Select
+  - RULE-SET,AdsLite,REJECT
+  - RULE-SET,Privacy,REJECT
+  - RULE-SET,Hijacking,REJECT
+  - RULE-SET,China,DIRECT
+  - RULE-SET,ChinaIPs,DIRECT
+  - RULE-SET,Apple,Apple
+  - RULE-SET,BiliBili,BiliBili
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,Twitter, Twitter
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,OpenAI,OpenAI
+  - RULE-SET,Game,Game
+  - RULE-SET,GitHub,GitHub
+  - RULE-SET,Google,Google
+  - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,GlobalMedia,GlobalMedia
+  - RULE-SET,Global,Select
+  - MATCH,No-Match
