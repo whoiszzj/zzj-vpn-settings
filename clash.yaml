@@ -202,6 +202,25 @@ proxy-groups:
       - 🇳🇱 Netherlands
       - 🇮🇳 India
       - 🇹🇷 Türkiye
+  - name: Nintendo
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Nintendo.png"
+    proxies:
+      - DIRECT
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
   - name: Game
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Steam.png"
@@ -406,18 +425,18 @@ rule-providers:
     url: "https://raw.githubusercontent.com/whoiszzj/zzj-rules/refs/heads/master/clash-proxy.yaml"
     interval: 86400
     path: ./ruleset/ZZJ-PROXY.yaml
-  AdsLite:
+  Advertising:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/Advertising_Classical.yaml"
     interval: 86400
-    path: ./ruleset/Advertising_Lite_Classical.yaml
+    path: ./ruleset/Advertising_Classical.yaml
   Apple:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml"
     interval: 86400
-    path: ./ruleset/Apple.yaml
+    path: ./ruleset/Apple_Classical.yaml
   BiliBili:
     type: http
     behavior: classical
@@ -466,6 +485,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml"
     interval: 86400
     path: ./ruleset/Game.yaml
+  GameDownload:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml"
+    interval: 86400
+    path: ./ruleset/GameDownload.yaml
   GitHub:
     type: http
     behavior: classical
@@ -478,6 +503,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml"
     interval: 86400
     path: ./ruleset/Twitter.yaml
+  Nintendo:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.yaml"
+    interval: 86400
+    path: ./ruleset/Nintendo.yaml
   TikTok:
     type: http
     behavior: classical
@@ -518,10 +549,11 @@ rules:
   - RULE-SET,Lan,DIRECT
   - RULE-SET,ZZJ-direct,DIRECT
   - RULE-SET,ZZJ-proxy,Select
-  - RULE-SET,AdsLite,REJECT
+  - RULE-SET,Advertising,REJECT
   - RULE-SET,Privacy,REJECT
   - RULE-SET,Hijacking,REJECT
   - RULE-SET,ChinaMax,DIRECT
+  - RULE-SET,GameDownload,DIRECT
   - RULE-SET,Apple,Apple
   - RULE-SET,BiliBili,BiliBili
   - RULE-SET,Netflix,Netflix
@@ -529,6 +561,7 @@ rules:
   - RULE-SET,TikTok, TikTok
   - RULE-SET,Spotify,Spotify
   - RULE-SET,OpenAI,OpenAI
+  - RULE-SET,Nintendo,Nintendo
   - RULE-SET,Game,Game
   - RULE-SET,GitHub,GitHub
   - RULE-SET,Google,Google
