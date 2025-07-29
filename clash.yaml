@@ -522,7 +522,6 @@ rules:
   - RULE-SET,Privacy,REJECT
   - RULE-SET,Hijacking,REJECT
   - RULE-SET,ChinaMax,DIRECT
-  - RULE-SET,ChinaIPs,DIRECT
   - RULE-SET,Apple,Apple
   - RULE-SET,BiliBili,BiliBili
   - RULE-SET,Netflix,Netflix
