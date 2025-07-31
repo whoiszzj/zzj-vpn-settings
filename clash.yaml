@@ -581,17 +581,17 @@ rules:
   - RULE-SET,GameDownload,DIRECT
   - RULE-SET,Apple,Apple
   - RULE-SET,BiliBili,BiliBili
-  - RULE-SET,Netflix,Netflix
-  - RULE-SET,Twitter, Twitter
-  - RULE-SET,TikTok, TikTok
+  - RULE-SET,Microsoft,Microsoft
   - RULE-SET,Spotify,Spotify
+  - RULE-SET,Google,Google
+  - RULE-SET,GitHub,GitHub
   - RULE-SET,OpenAI,OpenAI
+  - RULE-SET,Twitter, Twitter
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,TikTok, TikTok
+  - RULE-SET,GlobalMedia,GlobalMedia
   - RULE-SET,Steam,Steam
   - RULE-SET,Nintendo,Nintendo
   - RULE-SET,Game,Game
-  - RULE-SET,GitHub,GitHub
-  - RULE-SET,Google,Google
-  - RULE-SET,Microsoft,Microsoft
-  - RULE-SET,GlobalMedia,GlobalMedia
   - RULE-SET,Global,Select
   - MATCH,No-Match
