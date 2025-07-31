@@ -76,6 +76,24 @@ proxy-groups:
       - Select
     url: 'https://www.gstatic.com/generate_204'
     interval: 300
+  - name: Google
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Google_Search.png"
+    proxies:
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
   - name: GitHub
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/GitHub.png"
@@ -112,27 +130,9 @@ proxy-groups:
       - 🇳🇱 Netherlands
       - 🇮🇳 India
       - 🇹🇷 Türkiye
-  - name: Google
+  - name: Twitter
     type: select
-    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Google_Search.png"
-    proxies:
-      - Select
-      - Available
-      - 🇭🇰 Hong Kong
-      - 🇸🇬 Singapore
-      - 🇯🇵 Japan
-      - 🇺🇸 United States
-      - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
-      - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇹🇷 Türkiye
-  - name: GlobalMedia
-    type: select
-    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/ForeignMedia.png"
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Twitter.png"
     proxies:
       - Select
       - Available
@@ -184,9 +184,9 @@ proxy-groups:
       - 🇳🇱 Netherlands
       - 🇮🇳 India
       - 🇹🇷 Türkiye
-  - name: Twitter
+  - name: GlobalMedia
     type: select
-    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Twitter.png"
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/ForeignMedia.png"
     proxies:
       - Select
       - Available
@@ -259,25 +259,6 @@ proxy-groups:
       - 🇳🇱 Netherlands
       - 🇮🇳 India
       - 🇹🇷 Türkiye
-  - name: Microsoft
-    type: select
-    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Microsoft.png"
-    proxies:
-      - DIRECT
-      - Select
-      - Available
-      - 🇭🇰 Hong Kong
-      - 🇸🇬 Singapore
-      - 🇯🇵 Japan
-      - 🇺🇸 United States
-      - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
-      - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: Apple
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Apple_2.png"
@@ -300,6 +281,25 @@ proxy-groups:
   - name: BiliBili
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/bilibili.png"
+    proxies:
+      - DIRECT
+      - Select
+      - Available
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Microsoft
+    type: select
+    icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Microsoft.png"
     proxies:
       - DIRECT
       - Select
