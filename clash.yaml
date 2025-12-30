@@ -55,7 +55,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: "Available"
     type: select
     include-all-proxies: true
@@ -93,7 +92,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: GitHub
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/GitHub.png"
@@ -112,7 +110,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: OpenAI
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/ChatGPT.png"
@@ -129,7 +126,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: Twitter
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Twitter.png"
@@ -147,7 +143,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: Netflix
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Netflix.png"
@@ -165,7 +160,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: TikTok
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/TikTok.png"
@@ -183,7 +177,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: Amazon
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Amazon.png"
@@ -201,7 +194,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: GlobalMedia
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/ForeignMedia.png"
@@ -219,7 +211,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: Steam
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Steam.png"
@@ -238,7 +229,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: Nintendo
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Nintendo.png"
@@ -257,7 +247,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: Game
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Game.png"
@@ -276,7 +265,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: Apple
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Apple_2.png"
@@ -295,7 +283,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: BiliBili
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/bilibili.png"
@@ -314,7 +301,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: Microsoft
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Microsoft.png"
@@ -333,7 +319,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: Spotify
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Spotify.png"
@@ -352,7 +337,6 @@ proxy-groups:
       - 🇫🇷 France
       - 🇳🇱 Netherlands
       - 🇮🇳 India
-      - 🇹🇷 Türkiye
   - name: 🇭🇰 Hong Kong
     type: url-test
     include-all-proxies: true
@@ -437,14 +421,6 @@ proxy-groups:
     type: url-test
     include-all-proxies: true
     filter: "India"
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: true
-    hidden: true
-  - name: 🇹🇷 Türkiye
-    type: url-test
-    include-all-proxies: true
-    filter: "Türkiye"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
