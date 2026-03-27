@@ -373,95 +373,106 @@ proxy-groups:
   - name: 🇭🇰 Hong Kong
     type: url-test
     include-all-proxies: true
-    filter: "Hong Kong"
+    filter: "(?i)Hong Kong|HK|香港"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇦🇺 Australia
     type: url-test
     include-all-proxies: true
-    filter: "Australia"
+    filter: "(?i)Australia|AU|澳大利亚|澳洲"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇸🇬 Singapore
     type: url-test
     include-all-proxies: true
-    filter: "Singapore"
+    filter: "(?i)Singapore|SG|新加坡"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇯🇵 Japan
     type: url-test
     include-all-proxies: true
-    filter: "Japan"
+    filter: "(?i)Japan|JP|日本"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇺🇸 United States
     type: url-test
     include-all-proxies: true
-    filter: "United States"
+    filter: "(?i)United States|USA|US|America|美国"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇨🇳 Taiwan
     type: url-test
     include-all-proxies: true
-    filter: "Taiwan"
+    filter: "(?i)Taiwan|TW|台湾"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇩🇪 Germany
     type: url-test
     include-all-proxies: true
-    filter: "Germany"
+    filter: "(?i)Germany|DE|德国"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇬🇧 United Kingdom
     type: url-test
     include-all-proxies: true
-    filter: "United Kingdom"
+    filter: "(?i)United Kingdom|UK|Britain|England|英国"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇰🇷 South Korea
     type: url-test
     include-all-proxies: true
-    filter: "South Korea"
+    filter: "(?i)South Korea|Korea|KR|韩国"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇫🇷 France
     type: url-test
     include-all-proxies: true
-    filter: "France"
+    filter: "(?i)France|FR|法国"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇳🇱 Netherlands
     type: url-test
     include-all-proxies: true
-    filter: "Netherlands"
+    filter: "(?i)Netherlands|NL|荷兰"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
     hidden: true
+
   - name: 🇮🇳 India
     type: url-test
     include-all-proxies: true
-    filter: "India"
+    filter: "(?i)India|IN|印度"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
