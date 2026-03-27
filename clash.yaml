@@ -49,13 +49,7 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
   - name: "Available"
     type: select
     include-all-proxies: true
@@ -87,13 +81,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://www.google.com/generate_204'
+    interval: 300
   - name: GitHub
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/GitHub.png"
@@ -106,13 +96,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://github.com/'
+    interval: 300
   - name: OpenAI
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/ChatGPT.png"
@@ -123,13 +109,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://chatgpt.com/'
+    interval: 300
   - name: Claude
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Claude.png"
@@ -140,13 +122,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://claude.ai/'
+    interval: 300
   - name: Twitter
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Twitter.png"
@@ -158,13 +136,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://x.com/'
+    interval: 300
   - name: Netflix
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Netflix.png"
@@ -176,13 +150,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://www.netflix.com/'
+    interval: 300
   - name: TikTok
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/TikTok.png"
@@ -194,13 +164,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://www.tiktok.com/'
+    interval: 300
   - name: Amazon
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Amazon.png"
@@ -212,13 +178,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://www.amazon.com/'
+    interval: 300
   - name: GlobalMedia
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/ForeignMedia.png"
@@ -230,13 +192,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://www.youtube.com/'
+    interval: 300
   - name: Steam
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Steam.png"
@@ -249,13 +207,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://store.steampowered.com/'
+    interval: 300
   - name: Nintendo
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Nintendo.png"
@@ -268,13 +222,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://www.nintendo.com/'
+    interval: 300
   - name: Game
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Game.png"
@@ -287,13 +237,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://store.steampowered.com/'
+    interval: 300
   - name: Apple
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Apple_2.png"
@@ -306,13 +252,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://www.apple.com/'
+    interval: 300
   - name: BiliBili
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/bilibili.png"
@@ -325,13 +267,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://www.bilibili.com/'
+    interval: 300
   - name: Microsoft
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Microsoft.png"
@@ -344,13 +282,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://www.microsoft.com/'
+    interval: 300
   - name: Spotify
     type: select
     icon: "https://raw.githubusercontent.com/whoiszzj/Qure/master/IconSet/Color/Spotify.png"
@@ -363,13 +297,9 @@ proxy-groups:
       - 🇯🇵 Japan
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
-      - 🇩🇪 Germany
-      - 🇬🇧 United Kingdom
       - 🇰🇷 South Korea
-      - 🇫🇷 France
-      - 🇳🇱 Netherlands
-      - 🇮🇳 India
-      - 🇦🇺 Australia
+    url: 'https://open.spotify.com/'
+    interval: 300
   - name: 🇭🇰 Hong Kong
     type: url-test
     include-all-proxies: true
@@ -378,16 +308,6 @@ proxy-groups:
     interval: 300
     lazy: true
     hidden: true
-
-  - name: 🇦🇺 Australia
-    type: url-test
-    include-all-proxies: true
-    filter: "(?i)Australia|AU|澳大利亚|澳洲"
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: true
-    hidden: true
-
   - name: 🇸🇬 Singapore
     type: url-test
     include-all-proxies: true
@@ -423,56 +343,10 @@ proxy-groups:
     interval: 300
     lazy: true
     hidden: true
-
-  - name: 🇩🇪 Germany
-    type: url-test
-    include-all-proxies: true
-    filter: "(?i)Germany|DE|德国"
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: true
-    hidden: true
-
-  - name: 🇬🇧 United Kingdom
-    type: url-test
-    include-all-proxies: true
-    filter: "(?i)United Kingdom|UK|Britain|England|英国"
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: true
-    hidden: true
-
   - name: 🇰🇷 South Korea
     type: url-test
     include-all-proxies: true
     filter: "(?i)South Korea|Korea|KR|韩国"
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: true
-    hidden: true
-
-  - name: 🇫🇷 France
-    type: url-test
-    include-all-proxies: true
-    filter: "(?i)France|FR|法国"
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: true
-    hidden: true
-
-  - name: 🇳🇱 Netherlands
-    type: url-test
-    include-all-proxies: true
-    filter: "(?i)Netherlands|NL|荷兰"
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: true
-    hidden: true
-
-  - name: 🇮🇳 India
-    type: url-test
-    include-all-proxies: true
-    filter: "(?i)India|IN|印度"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
