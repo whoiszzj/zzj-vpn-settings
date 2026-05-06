@@ -293,18 +293,6 @@ proxy-groups:
     lazy: true
     hidden: true
 rule-providers:
-  ZZJ-direct:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/whoiszzj/zzj-rules/refs/heads/master/clash-direct.yaml"
-    interval: 86400
-    path: ./ruleset/ZZJ-DIRECT.yaml
-  ZZJ-proxy:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/whoiszzj/zzj-rules/refs/heads/master/clash-proxy.yaml"
-    interval: 86400
-    path: ./ruleset/ZZJ-PROXY.yaml
   Advertising:
     type: http
     behavior: classical
@@ -445,11 +433,19 @@ rule-providers:
     path: ./ruleset/Global_Classical.yaml
 rules:
   - RULE-SET,Lan,DIRECT
-  - RULE-SET,ZZJ-direct,DIRECT
-  - RULE-SET,ZZJ-proxy,Select
   - RULE-SET,Advertising,REJECT
   - RULE-SET,Privacy,REJECT
   - RULE-SET,Hijacking,REJECT
+  ########################################
+  ## Add Direct Rules
+  - DOMAIN-SUFFIX,hf-mirror.com, DIRECT
+  ## Add Proxy Rules
+  - DOMAIN-SUFFIX,wallhaven.cc, Select
+  - DOMAIN-SUFFIX,thecvf.com, Select
+  - DOMAIN-SUFFIX,aaai.org, Select
+  - DOMAIN-SUFFIX,hdhive.com, Select
+  - DOMAIN-SUFFIX,leetcode.cn, Select
+  ########################################
   - RULE-SET,ChinaMax,DIRECT
   - RULE-SET,GameDownload,DIRECT
   - RULE-SET,Apple,Apple
