@@ -458,6 +458,8 @@ rules:
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Google,Google
   - RULE-SET,GitHub,GitHub
+  - DOMAIN-SUFFIX,cursor.com,LLM
+  - DOMAIN-SUFFIX,cursor.sh,LLM
   - RULE-SET,OpenAI,LLM
   - RULE-SET,Claude,LLM
   - RULE-SET,Twitter, Twitter
