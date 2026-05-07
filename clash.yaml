@@ -439,7 +439,6 @@ rules:
   ########################################
   ## Add Direct Rules
   - DOMAIN-SUFFIX,hf-mirror.com, DIRECT
-  - DOMAIN-SUFFIX,overleaf.cn, DIRECT
   - DOMAIN-SUFFIX,overleaf.com, DIRECT
   ## Add Proxy Rules
   - DOMAIN-SUFFIX,wallhaven.cc, Select
