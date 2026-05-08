@@ -440,7 +440,7 @@ rules:
   ## Add Direct Rules
   - DOMAIN-SUFFIX,hf-mirror.com, DIRECT
   ## Add Proxy Rules
-  - DOMAIN-SUFFIX,overleaf.com, Availiable
+  - DOMAIN-SUFFIX,overleaf.com, Available
   - DOMAIN-SUFFIX,wallhaven.cc, Select
   - DOMAIN-SUFFIX,thecvf.com, Select
   - DOMAIN-SUFFIX,aaai.org, Select
