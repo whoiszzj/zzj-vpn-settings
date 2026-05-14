@@ -270,7 +270,7 @@ proxy-groups:
   - name: 🇺🇸 United States
     type: url-test
     include-all-proxies: true
-    filter: "(?i)United States|USA|US|America|美国"
+    filter: "(?i)(🇺🇸|美国|美國|United[ -]?States|(?:^|[^A-Za-z])(US|USA|U\\.S\\.|U\\.S\\.A\\.)(?:[^A-Za-z]|$))"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: true
